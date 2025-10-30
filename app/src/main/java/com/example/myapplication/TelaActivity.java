@@ -13,15 +13,20 @@ public class TelaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tela);
 
         Button bntFrases = findViewById(R.id.bntFrases);
-        bntFrases.setOnClickListener(v ->{
+        bntFrases.setOnClickListener(v -> {
             Intent intent = new Intent(TelaActivity.this, HomeActivity.class);
             startActivity(intent);
         });
 
         Button bntTela = findViewById(R.id.bntTela);
-        bntTela.setOnClickListener(v->{
+        bntTela.setOnClickListener(v -> {
             Intent intent = new Intent(TelaActivity.this, Tela2Activity.class);
             startActivity(intent);
         });
-        }
+        Button bntVolt = findViewById(R.id.bntVolt);
+        bntVolt.setOnClickListener(v -> {
+            Intent intent = new Intent(TelaActivity.this, MainActivity.class);
+            startActivity(intent);
+    });
+}
 }

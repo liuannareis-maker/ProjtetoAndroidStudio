@@ -12,5 +12,11 @@ public class Tela2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela2);
 
-    }
+
+    Button bntVoltr = findViewById(R.id.bntVoltr);
+        bntVoltr.setOnClickListener(v -> {
+        Intent intent = new Intent(Tela2Activity.this, TelaActivity.class);
+        startActivity(intent);
+    });
+}
 }

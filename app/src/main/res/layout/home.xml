@@ -20,8 +20,8 @@
 
     <Button
         android:id="@+id/bntMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="104dp"
+        android:layout_height="53dp"
         android:backgroundTint="#FCFDFA"
         android:text="Frases"
         android:textColor="#0A570E"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.827" />
+        app:layout_constraintVertical_bias="0.77" />
 
     <Button
         android:id="@+id/bntVoltar"
@@ -45,7 +45,7 @@
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926" />
+        app:layout_constraintVertical_bias="0.877" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
@@ -61,19 +61,20 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.107"
+        app:layout_constraintVertical_bias="0.071"
         app:srcCompat="@drawable/borboleta" />
 
     <Button
         android:id="@+id/bntSair"
-        android:layout_width="80dp"
-        android:layout_height="47dp"
+        android:layout_width="98dp"
+        android:layout_height="50dp"
         android:backgroundTint="#FAF8F8"
         android:text="Sair"
         android:textColor="#0B450D"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
