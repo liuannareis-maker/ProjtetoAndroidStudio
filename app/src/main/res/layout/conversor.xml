@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dolares">
+
+    <Button
+        android:id="@+id/bntConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FAF8F8"
+        android:text="Converter"
+        android:textColor="#0A400C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+
+    <Button
+        android:id="@+id/bntVltr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FAF8F8"
+        android:text="Voltar"
+        android:textColor="#0A400C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <EditText
+        android:id="@+id/txtValor"
+        android:layout_width="238dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#FBF8F8"
+        android:ems="10"
+        android:hint="Insira um valor"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFCFC"
+        android:textColorHint="#FDFBFB"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <Spinner
+        android:id="@+id/spMoeda"
+        android:layout_width="370dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#151B0C"
+        android:backgroundTintMode="screen"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/bntConverter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValor"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="385dp"
+        android:layout_height="62dp"
+        android:textColor="#FFFEFE"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/bntConverter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spMoeda"
+        app:layout_constraintVertical_bias="0.63" />
+</androidx.constraintlayout.widget.ConstraintLayout>

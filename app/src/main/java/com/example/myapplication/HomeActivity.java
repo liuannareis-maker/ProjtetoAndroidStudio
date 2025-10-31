@@ -23,6 +23,8 @@ public class HomeActivity extends AppCompatActivity {
         Button bntVoltar = findViewById(R.id.bntVoltar);
         Button bntSair = findViewById(R.id.bntSair);
 
+
+
 // Abrir vizualizações
 
         String[] frases = {

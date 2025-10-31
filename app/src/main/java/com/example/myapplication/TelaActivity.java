@@ -28,5 +28,11 @@ public class TelaActivity extends AppCompatActivity {
             Intent intent = new Intent(TelaActivity.this, MainActivity.class);
             startActivity(intent);
     });
+        Button bntConversor = findViewById(R.id.bntConversor);
+        bntConversor.setOnClickListener(v->{
+            Intent intent = new Intent(TelaActivity.this, ConversorActivity.class);
+            startActivity(intent);
+
+        });
 }
 }
