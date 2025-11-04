@@ -34,5 +34,24 @@ public class TelaActivity extends AppCompatActivity {
             startActivity(intent);
 
         });
+        Button bntTmperatura = findViewById(R.id.bntTmperatura);
+        bntTmperatura.setOnClickListener(v->{
+            Intent intent = new Intent(TelaActivity.this, TemperaturaActivity.class);
+            startActivity(intent);
+
+        });
+        Button bntCarro = findViewById(R.id.bntCarro);
+        bntCarro.setOnClickListener(v->{
+            Intent intent = new Intent(TelaActivity.this, CarroActivity.class);
+            startActivity(intent);
+
+        });
+        Button bntCep = findViewById(R.id.bntCep);
+        bntCep.setOnClickListener(v->{
+            Intent intent = new Intent(TelaActivity.this,CepActivity.class);
+            startActivity(intent);
+
+        });
+    }
 }
-}
+
