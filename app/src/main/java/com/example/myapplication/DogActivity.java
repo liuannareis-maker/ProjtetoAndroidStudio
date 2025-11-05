@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import static com.example.myapplication.R.*;
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -23,6 +25,7 @@ public class DogActivity extends AppCompatActivity {
     Button bntDog;
     ImageView imgDog;
     TextView txtStatus;
+    Button bntVoltando;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,9 @@ public class DogActivity extends AppCompatActivity {
         imgDog = findViewById(R.id.imgDog);
         txtStatus = findViewById(R.id.txtStatus);
         bntDog = findViewById(R.id.bntDog);
+        bntVoltando = findViewById(R.id.bntVoltando);
+        bntVoltando.setOnClickListener(v -> finish());
+
 
         bntDog.setOnClickListener(v -> fetchDog());
     }
