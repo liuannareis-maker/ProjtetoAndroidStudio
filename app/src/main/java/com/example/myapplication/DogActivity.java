@@ -1,7 +1,5 @@
 package com.example.myapplication;
 
-import static com.example.myapplication.R.*;
-
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
