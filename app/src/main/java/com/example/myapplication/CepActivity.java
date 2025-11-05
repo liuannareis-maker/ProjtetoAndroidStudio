@@ -23,6 +23,8 @@ public class CepActivity extends AppCompatActivity {
         EditText txtCep = findViewById(R.id.txtCep);
         Button bntBuscarCep = findViewById(R.id.bntBuscarCep);
         TextView txtInfo = findViewById(R.id.txtInfo);
+        Button bntVoltar2 = findViewById(R.id.bntVoltar2);
+        bntVoltar2.setOnClickListener(v -> finish());
 
         bntBuscarCep.setOnClickListener(v -> {
 
@@ -39,7 +41,7 @@ public class CepActivity extends AppCompatActivity {
 
     }
 
-    private void buscarEndereco(String cep, TextView  txtInfo){
+    private void buscarEndereco(String cep, TextView  txtInfo) {
         new Thread(() -> {
             String url = "https://viacep.com.br/ws/" + cep + "/json/";
             try {
@@ -68,10 +70,14 @@ public class CepActivity extends AppCompatActivity {
 
                 runOnUiThread(() -> txtInfo.setText(endereco));
 
+
             } catch (Exception e) {
                 runOnUiThread(() -> txtInfo.setText("Erro ao buscar endereço."));
                 e.printStackTrace();
             }
+
         }).start();
+
     }
+
 }

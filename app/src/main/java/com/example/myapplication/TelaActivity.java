@@ -52,6 +52,12 @@ public class TelaActivity extends AppCompatActivity {
             startActivity(intent);
 
         });
+        Button bntTels = findViewById(R.id.bntTela);
+        bntTela.setOnClickListener(v->{
+            Intent intent = new Intent(TelaActivity.this,DogActivity.class);
+            startActivity(intent);
+
+        });
     }
 }
 
