@@ -2,7 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Recursos e permissões -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <!-- Permissões necessárias -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"/>
 
 
     <application
@@ -16,40 +25,35 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
 
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
         <activity android:name=".HomeActivity" />
+        <activity android:name=".TelaActivity" android:exported="true" />
+        <activity android:name=".Tela2Activity" android:exported="true" />
+        <activity android:name=".ConversorActivity" android:exported="true" />
+        <activity android:name=".TemperaturaActivity" android:exported="true" />
+        <activity android:name=".CarroActivity" android:exported="true" />
+        <activity android:name=".CepActivity" android:exported="true" />
+        <activity android:name=".DogActivity" android:exported="true" />
+        <activity android:name=".CompasActivity" android:exported="true" />
+        <activity android:name=".CapturaActivity" android:exported="true" />
 
-        <activity
-            android:name=".TelaActivity"
-            android:exported="true" />
-        <activity
-            android:name=".Tela2Activity"
-            android:exported="true" />
-        <activity
-            android:name=".ConversorActivity"
-            android:exported="true" />
-        <activity
-            android:name=".TemperaturaActivity"
-            android:exported="true" />
-        <activity
-            android:name=".CarroActivity"
-            android:exported="true" />
-        <activity
-            android:name=".CepActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".DogActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
     </application>
 
 </manifest>
+
+

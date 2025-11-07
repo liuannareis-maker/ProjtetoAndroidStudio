@@ -18,7 +18,7 @@ public class TelaActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        Button bntTela = findViewById(R.id.bntTela);
+        Button bntTela = findViewById(R.id.bntTelaDog);
         bntTela.setOnClickListener(v -> {
             Intent intent = new Intent(TelaActivity.this, Tela2Activity.class);
             startActivity(intent);
@@ -52,9 +52,21 @@ public class TelaActivity extends AppCompatActivity {
             startActivity(intent);
 
         });
-        Button bntTels = findViewById(R.id.bntTela);
-        bntTela.setOnClickListener(v->{
+        Button bntTelaDog = findViewById(R.id.bntTelaDog);
+        bntTelaDog.setOnClickListener(v->{
             Intent intent = new Intent(TelaActivity.this,DogActivity.class);
+            startActivity(intent);
+
+        });
+        Button bntItensCompra = findViewById(R.id.bntItensCompra);
+        bntItensCompra.setOnClickListener(v->{
+            Intent intent = new Intent(TelaActivity.this,CompasActivity.class);
+            startActivity(intent);
+
+        });
+        Button bntCptura = findViewById(R.id.bntCptura);
+        bntCptura.setOnClickListener(v->{
+            Intent intent = new Intent(TelaActivity.this,CapturaActivity.class);
             startActivity(intent);
 
         });
