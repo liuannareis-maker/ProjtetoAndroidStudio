@@ -45,6 +45,9 @@
         <activity android:name=".DogActivity" android:exported="true" />
         <activity android:name=".CompasActivity" android:exported="true" />
         <activity android:name=".CapturaActivity" android:exported="true" />
+        <activity android:name=".FuncionarioActivity" android:exported="true" />
+        <activity android:name=".EstoqueActivity" android:exported="true" />
+
 
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>

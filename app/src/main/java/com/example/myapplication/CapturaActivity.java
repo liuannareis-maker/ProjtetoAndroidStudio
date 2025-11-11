@@ -37,6 +37,8 @@ public class CapturaActivity extends AppCompatActivity {
         imgCap = findViewById(R.id.imgCap);
         Button bntCap = findViewById(R.id.bntCap);
         Button bntShare = findViewById(R.id.bntShare);
+        Button bntSaindo2 =findViewById(R.id.bntSaindo2);
+        bntSaindo2.setOnClickListener(v -> finish());
 
         // Configura o retorno da câmera
         cameraLauncher = registerForActivityResult(

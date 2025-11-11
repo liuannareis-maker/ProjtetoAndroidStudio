@@ -52,14 +52,10 @@ public class HomeActivity extends AppCompatActivity {
             txtFrase.setText(frases[numero]);
             imgFrase.setImageResource(imagens[numero]);
         });
-        bntVoltar.setOnClickListener(v->{
-            Intent intent = new Intent(HomeActivity.this, MainActivity.class);
-            startActivity(intent);
-        });
+        bntVoltar.setOnClickListener(v -> finish());
         bntSair.setOnClickListener(v -> {
             finishAffinity();
         });
-
 
     }
 }
