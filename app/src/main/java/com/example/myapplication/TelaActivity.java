@@ -1,7 +1,5 @@
 package com.example.myapplication;
 
-import static com.example.myapplication.R.id.bntFuncionario;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -73,15 +71,21 @@ public class TelaActivity extends AppCompatActivity {
 
         });
 
-        Button bntFuncionario = findViewById(R.id.bntFuncionario);
-        bntFuncionario.setOnClickListener(v->{
-            Intent intent = new Intent(TelaActivity.this,FuncionarioActivity.class);
+        Button bntFuncionarioT = findViewById(R.id.bntFuncionarioT);
+        bntFuncionarioT.setOnClickListener(v->{
+            Intent intent = new Intent(TelaActivity.this, SalarioActivity.class);
             startActivity(intent);
 
         });
         Button bntEstoque = findViewById(R.id.bntEstoque);
         bntEstoque.setOnClickListener(v->{
             Intent intent = new Intent(TelaActivity.this,EstoqueActivity.class);
+            startActivity(intent);
+
+        });
+        Button bntFaixaSal = findViewById(R.id.bntFaixaSal);
+        bntFaixaSal.setOnClickListener(v->{
+            Intent intent = new Intent(TelaActivity.this,FaixaSalarialActivity.class);
             startActivity(intent);
 
         });

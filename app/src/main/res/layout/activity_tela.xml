@@ -111,7 +111,7 @@
         app:layout_constraintVertical_bias="0.734" />
 
     <Button
-        android:id="@+id/bntFuncionario"
+        android:id="@+id/bntFuncionarioT"
         android:layout_width="163dp"
         android:layout_height="49dp"
         android:backgroundTint="#FBF9F9"
@@ -124,6 +124,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.806" />
+
+    <Button
+        android:id="@+id/bntFaixaSal"
+        android:layout_width="163dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#FBF9F9"
+        android:text="Faixa salarial"
+        android:textColor="#125215"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.878" />
 
     <Button
         android:id="@+id/bntTmperatura"
