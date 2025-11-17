@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             String usuario = txtUsuario.getText().toString();
             String senha = txtSenha.getText().toString();
 
-            if (usuario.equals("admin") && senha.equals("admin")) {
+            if (usuario.equals("") && senha.equals("")) {
                 // Abrir nova visualização
                 Intent intent = new Intent(MainActivity.this, TelaActivity.class);
                 startActivity(intent);
