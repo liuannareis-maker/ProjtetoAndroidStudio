@@ -36,6 +36,7 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntTeste"
+        app:layout_constraintVertical_bias="1.0"
         app:rippleColor="#FF5722" />
 
     <EditText
@@ -115,5 +116,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.047"
         app:srcCompat="@drawable/download" />
+
+    <TextView
+        android:id="@+id/txtAdd"
+        android:layout_width="165dp"
+        android:layout_height="35dp"
+        android:hint="Adicionar novo usuario"
+        android:textColorHint="#FAF6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -48,6 +48,7 @@
         <activity android:name=".EstoqueActivity" android:exported="true" />
         <activity android:name=".FaixaSalarialActivity" android:exported="true" />
         <activity android:name=".SalarioActivity" android:exported="true" />
+        <activity android:name=".Novo" android:exported="true" />
 
 
         <activity android:name=".MainActivity" android:exported="true">
